@@ -51,6 +51,8 @@ For reference, I used `rustc 1.67.1 (d5a82bbd2 2023-02-07)`.
 cargo +nightly build -Zbuild-std=libc,panic_abort,std -Zbuild-std-features=""  --target=./x86_64-unknown-linux-cosmo.json
 ```
 
+See [Rust Unstable docs](https://doc.rust-lang.org/cargo/reference/unstable.html) for info on `Zbuild-std` flags.
+
 For reference, I used the below versions of `gcc` and `ld.bfd`
 
 ```
