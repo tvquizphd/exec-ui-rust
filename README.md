@@ -34,6 +34,8 @@ For reference, I used the `cosmopolitan.zip` v2.2 from November 7, 2022.
 2. Download the necessary host toolchain and source code for Rust:
 
 ```bash
+# Install MUSL
+sudo apt install musl-tools
 # Download Rust
 curl --proto '=https' --tlsv1.3 https://sh.rustup.rs -sSf | sh
 # I was on Ubuntu 20.04, so I did this
