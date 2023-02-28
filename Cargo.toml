@@ -4,11 +4,10 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
-#hyper = "0.14.24"
 fantoccini = { version = "=0.20.0-rc.3", features = ["rustls-tls"], default-features = false }
 
 [patch.crates-io]
-mio = { git = 'https://github.com/tvquizphd/mio', branch = "cosmo" }
-ring = { git = 'https://github.com/tvquizphd/ring', branch = "getrandom" }
+ring = { git = 'https://github.com/tvquizphd/ring', branch = "cosmo" }
+mio = { git = 'https://github.com/tvquizphd/mio', branch = "cosmo-notgull" }
 socket2 = { git = 'https://github.com/tvquizphd/socket2', branch = "cosmo" }
-getrandom = { git = 'https://github.com/tvquizphd/getrandom', branch = "cosmo" }
+tokio = { git = 'https://github.com/tvquizphd/tokio', branch = "as-fd" }
