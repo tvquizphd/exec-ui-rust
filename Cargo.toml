@@ -4,14 +4,11 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
-thirtyfour = "0.31.0"
-#fantoccini = { version = "=0.20.0-rc.3", features = ["rustls-tls"], default-features = false }
+tokio = { git = 'https://github.com/tvquizphd/tokio', branch = "as-fd" }
+thirtyfour = { git = 'https://github.com/stevepryde/thirtyfour', tag = "v0.32.0-rc.6", default-features = false }
 
 [patch.crates-io]
-ring = { git = 'https://github.com/tvquizphd/ring', branch = "cosmo" }
-mio = { git = 'https://github.com/tvquizphd/mio', branch = "cosmo-notgull" }
-time = { git = 'https://github.com/tvquizphd/time', branch = "cosmo-0-1-45" }
-socket2 = { git = 'https://github.com/tvquizphd/socket2', branch = "cosmo" }
+tokio = { git = 'https://github.com/tvquizphd/tokio', branch = "as-fd" }
+hyper = { git = 'https://github.com/tvquizphd/hyper', branch = "cosmo" }
 num_cpus = { git = 'https://github.com/tvquizphd/num_cpus', branch = "cosmo" }
 parking_lot_core = { git = 'https://github.com/tvquizphd/parking_lot', branch = "cosmo" }
-tokio = { git = 'https://github.com/tvquizphd/tokio', branch = "as-fd" }

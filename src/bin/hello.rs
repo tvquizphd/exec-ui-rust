@@ -1,19 +1,18 @@
 #![feature(rustc_private)]
-// ./src/hello.md
-// This is a comment, and is ignored by the compiler
-// You can test this code by clicking the "Run" button over there ->
-// or if you prefer to use your keyboard, you can use the "Ctrl + Enter" shortcut
 
-// This code is editable, feel free to hack it!
-// You can always return to the original code by clicking the "Reset" button ->
+use tokio::time::{sleep, Duration};
+use thirtyfour::prelude::*;
 
-fn part0() {
-    // Statements here are executed when the compiled binary is called
-    // Print text to the console
-    println!("TODO");
+#[tokio::main]
+async fn main() -> WebDriverResult<()> {
+    let caps = DesiredCapabilities::chrome();
+    let driver = WebDriver::new("http://localhost:9515", caps).await?;
+
+    // Navigate to https://wikipedia.org.
+    driver.goto("http://wikipedia.org").await?;
+
+    sleep(Duration::from_millis(2000)).await;
+
+    driver.quit().await?;
+    Ok(())
 }
-
-pub fn main() {
-	part0();
-}
-
