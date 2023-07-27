@@ -5,10 +5,10 @@ edition = "2021"
 
 [dependencies]
 tokio = { git = 'https://github.com/tvquizphd/tokio', branch = "as-fd" }
-thirtyfour = { git = 'https://github.com/stevepryde/thirtyfour', tag = "v0.32.0-rc.6", default-features = false }
+thirtyfour = { git = 'https://github.com/tvquizphd/thirtyfour', branch = "cosmo" }
 
 [patch.crates-io]
 tokio = { git = 'https://github.com/tvquizphd/tokio', branch = "as-fd" }
-hyper = { git = 'https://github.com/tvquizphd/hyper', branch = "cosmo" }
 num_cpus = { git = 'https://github.com/tvquizphd/num_cpus', branch = "cosmo" }
 parking_lot_core = { git = 'https://github.com/tvquizphd/parking_lot', branch = "cosmo" }
+hyper = { git = 'https://github.com/tvquizphd/hyper', branch = "cosmo" }
